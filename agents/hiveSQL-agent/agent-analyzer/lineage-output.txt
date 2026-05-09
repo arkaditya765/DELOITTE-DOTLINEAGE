@@ -1,0 +1,11 @@
+File: create_sales_view.sql
+READS: gold.sales_fact, gold.product_dim
+WRITES: analytics.daily_revenue_summary
+
+File: maintenance_job.sql
+READS: gold.active_orders
+WRITES: staging.temp_processing
+
+File: customer_churn_report.hql
+READS: silver.web_traffic
+WRITES: analytics.churn_risk_scores
